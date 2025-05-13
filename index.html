@@ -1594,6 +1594,25 @@
                     </div>
                 </div>
             </div>
+                <!-- Existing content -->
+            <div class="modal" tabindex="-1" id="confirmDeleteRoundModal">
+                <!-- Modal content -->
+            </div>
+            <div id=recentActivityWidget class=activity-widget style="background-color: lightgrey; padding: 10px;">
+            <h2>Recent Activity</h2>
+            <font size="4" color="blue">Latest User Actions:</font>
+            <ul style='list-style: none'>
+            <li><b>User posted a new score!</b> - 5 mins ago</li>
+                <li><i>User added a course</i> - 10 mins ago</li>
+                    <li>User followed a buddy - 1 hour ago</li>
+            </ul>
+            <button onclick=refreshActivity() class=btn>Refresh</button>
+            <script>
+            function refreshActivity(){
+            document.getElementById('recentActivityWidget').innerHTML += '<li>New activity loaded</li>'
+            }
+            </script>
+            </div>
         </main>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
